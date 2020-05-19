@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>snake Form!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">Snake_FORM</text>
+        </symbol>
+        <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+    <h2>This Form is using The 1024 BinarySnake PROTOCOL, Please Follow The Instructions </h2>
+    <h4>Score 5 Points to unlock the form</h4>
+    <h5>*Any Use of JavaScript / Inspection Tools to try break the protocol, Browser Will be Locked</h5>
+</header>
+<div class="container">
+    <div class="form-container">
+        <form class="form" id="snake-form" action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
+                <div class='form-group'>
+                    <label for="fullName">Full Name</label>
+                    <input class="form-control" name="fullName" id="fullName" type="text" required/>
+                    <span class="text-muted-y">One Space Is Required</span>
+                </div>
+                <div class='form-group'>
+                    <label for="pass">Password</label>
+                    <input class="form-control" name="pass" id="pass" type="password" pattern="^[0-9]+$" required/>
+                    <span class="text-muted-y">Only Numbers ( 6 )</span>
+                </div>
+                <div class='form-group'>
+                    <label for="mail">Email</label>
+                    <input class="form-control" name="mail" id="mail" type="email" required/>
+                    <span class="text-muted-y">A Valid Email</span>
+                </div>
+                <div class='form-group'>
+                    <label for="website">Website</label>
+                    <input class="form-control" name="website" id="website" type="url" required/>
+                    <span class="text-muted-y">A Valid URL</span>
+                </div>
+                <div class='form-group'>
+                    <label for="phone">Phone</label>
+                    <input class="form-control" name="phone" id="phone" type="text"/>
+                    <span class="text-muted-y">Only Numbers(9) </span>
+                </div>
+                <div class='form-group'>
+                    <label for="coffee">How Much Cups Of Coffee You Drink a Day?</label>
+                    <input class="form-control" name="coffee" id="coffee" type="number"/>
+                </div>
+                <div class='form-group'>
+                    <label for="temper">Whats The Temperature Outside ?</label>
+                    <input class="form-control" name="temper" id="temper"/>
+                </div>
+            <div class='form-group'>
+                <label for="address">Address</label>
+                <input class="form-control" name="address" id="address"/>
+            </div>
+                <div class="form-group">
+                    <label>Interests</label>
+                    <div class="custom-control custom-checkbox">
+                        <input
+                                name="interests[]"
+                                class="custom-control-input"
+                                id="codingOne"
+                                type="checkbox"
+                                value="Coding"/>
+                        <label class="custom-control-label" for="codingOne">Coding</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input
+                                name="interests[]"
+                                class="custom-control-input"
+                                id="poker"
+                                type="checkbox"
+                                value="Playing Poker"/>
+                        <label class="custom-control-label" for="poker">Playing Poker</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input
+                                name="interests[]"
+                                class="custom-control-input"
+                                id="skating"
+                                type="checkbox"
+                                value="Skating"/>
+                        <label class="custom-control-label" for="skating">Skating</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input
+                                name="interests[]"
+                                class="custom-control-input"
+                                id="codingTwo"
+                                type="checkbox"
+                                value="Coding, The more The better!"/>
+                        <label class="custom-control-label" for="codingTwo">Coding Again, Because its fun!</label>
+                    </div>
+                    <span class="text-muted-y">At Least One Checked</span>
+                </div>
+                <label>Gender</label>
+                <div class="form-group ">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input
+                                type="radio"
+                                class="custom-control-input"
+                                id="female"
+                                name="gender"
+                                value="Female">
+                        <label class="custom-control-label" for="female">Female</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input
+                                type="radio"
+                                class="custom-control-input"
+                                id="male"
+                                name="gender"
+                                value="Male">
+                        <label class="custom-control-label" for="male">Male</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                <label for="age" id="ageLabel">Age - 10</label>
+                <input type="range" class="custom-range" id="age" name="age" min="10" max="20" value="10">
+            </div>
+            <button class='btn btn-primary' type="submit" id="submitButton" disabled>Submit</button>
+        </form>
+    </div>
+    <div>
+        <canvas id="stage" width="450" height="350"></canvas>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>
